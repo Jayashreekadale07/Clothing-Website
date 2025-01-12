@@ -1,3 +1,3 @@
 # Clothing-Website
 
-![]("C:\Users\Jayashree Kadale\Pictures\Screenshots\Screenshot 2025-01-12 130923.png")
+![](https://github.com/user-attachments/assets/749c277a-8b20-4f7f-aa66-465c935b9246)
