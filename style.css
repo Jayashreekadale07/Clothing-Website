@@ -1,0 +1,415 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #555;
+}
+
+p {
+    color: #555;
+}
+
+/* Container and Row Layout */
+.container,
+.small-container {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Hero Section */
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col-2 img {
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+.col-2 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+.btn {
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+
+.btn:hover {
+    background: #563434;
+}
+
+/* Categories Section */
+.categories {
+    margin: 70px 0;
+}
+
+.categories .row {
+    display: flex;
+    gap: 15px;
+}
+
+.categories .col-3 {
+    flex-basis: 30%;
+    min-width: 250px;
+    text-align: center;
+}
+
+.categories .col-3 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Featured Products Section */
+.small-container h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+/* Product Card */
+.col-4 {
+    width: 22%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    border: 1px solid #f1f1f1;
+    border-radius: 10px;
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+    margin-bottom: 50px;
+}
+
+.col-4 img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.col-4 h4 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.col-4 p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #555;
+    margin-top: 10px;
+}
+
+.col-4:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Rating Stars */
+.rating i {
+    color: #ffcc00;
+    font-size: 18px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .col-2,
+    .col-3,
+    .col-4 {
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul li {
+        margin-right: 10px;
+    }
+}
+.title {
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+
+.title::after {
+    content: '';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.h4{
+    color: #555;
+    font-weight: normal;
+}
+.col-4{
+    font-size: 14px;
+}
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    box-sizing: border-box;
+}
+
+/* Offer Section */
+.offer {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+}
+
+.small-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.col-2 {
+    flex: 1 1 45%;
+    max-width: 45%;
+}
+
+.col-2 img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.col-2 p {
+    color: #555;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.col-2 h1 {
+    color: #333;
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+.col-2 small {
+    display: block;
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 15px 0;
+}
+
+.col-2 .btn {
+    display: inline-block;
+    background-color: #ff523b;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+
+.col-2 .btn:hover {
+    background-color: #e14b33;
+}
+
+/* Testimonial Section */
+.testimonial {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+.col-3 {
+    flex: 1 1 30%;
+    max-width: 30%;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.col-3 p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.rating {
+    margin-top: 10px;
+}
+
+.rating i {
+    color: #ff523b;
+    font-size: 18px;
+    margin: 0 2px;
+}
+
+.rating i.fa-star-o {
+    color: #ccc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .col-2, .col-3 {
+        max-width: 100%;
+        flex: 1 1 100%;
+    }
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    font-size: 14px;
+}
+
+footer h3 {
+    color: #ff5722;
+    margin-bottom: 20px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+footer ul li a:hover {
+    color: #ff5722;
+}
+
+footer .social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+footer .social-icons a:hover {
+    color: #ff5722;
+}
+
+footer .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .col-4 {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
+
+/* Ensure About Us text is white */
+footer .col-4 p {
+    color: #fff;
+}
+
+footer hr {
+    border: none;
+    border-top: 1px solid #555;
+    margin: 20px 0;
+}
+
+footer .copyright {
+    text-align: center;
+    margin-top: 10px;
+}
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+}
+@media only screen and(max_width: 800px) {
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+    }
+    nav ul{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: #f1f1f1;
+    }
+    
+}
